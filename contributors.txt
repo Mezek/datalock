@@ -1,0 +1,2 @@
+Project datalock is written by
+Erik Bartoš <erik.bartos@gmail.com>
