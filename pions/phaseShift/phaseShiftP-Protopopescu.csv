@@ -1,0 +1,31 @@
+# Pion phase shift P data
+# Source: Phys. Rev. D7 (1973) 1279, S. D. Protopopescu et al.
+# sqrt(s) [GeV], delta_1^1 [deg], err. delta_1^1 [deg]
+Code,Abbrev,x,y,dy+,dy-
+120,Protopopescu,0.550, 10.00,0.70,0.70
+120,Protopopescu,0.625, 19.00,0.80,0.80
+120,Protopopescu,0.665, 30.00,1.00,1.00
+120,Protopopescu,0.690, 39.00,1.00,1.00
+120,Protopopescu,0.710, 48.00,1.00,1.00
+120,Protopopescu,0.730, 60.00,1.50,1.50
+120,Protopopescu,0.745, 70.00,1.50,1.50
+120,Protopopescu,0.755, 77.00,1.60,1.60
+120,Protopopescu,0.765, 85.00,1.60,1.60
+120,Protopopescu,0.775, 92.00,1.60,1.60
+120,Protopopescu,0.785, 99.00,1.50,1.50
+120,Protopopescu,0.795,105.00,1.50,1.50
+120,Protopopescu,0.810,114.00,1.40,1.40
+120,Protopopescu,0.830,124.00,1.20,1.20
+120,Protopopescu,0.850,131.00,1.10,1.10
+120,Protopopescu,0.870,136.00,1.00,1.00
+120,Protopopescu,0.890,142.00,0.80,0.80
+120,Protopopescu,0.910,145.00,0.80,0.80
+120,Protopopescu,0.935,150.00,0.90,0.90
+120,Protopopescu,0.965,153.00,1.00,1.00
+120,Protopopescu,1.000,156.00,1.20,1.20
+120,Protopopescu,1.040,158.00,1.60,1.60
+120,Protopopescu,1.075,160.00,2.50,2.50
+120,Protopopescu,1.105,162.00,3.40,3.40
+120,Protopopescu,1.135,163.00,4.00,4.00
+120,Protopopescu,1.150,164.00,6.00,6.00
+# EOF
