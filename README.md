@@ -1,6 +1,6 @@
 # DataLock
 
-Tables of physical experimental data
+World physical experimental data for selected elementary particles. Data are supplemented with reference links.
 
 # Bugs and remarks
 
