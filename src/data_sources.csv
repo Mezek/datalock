@@ -1,5 +1,7 @@
 "Year","Experiment","Abbrev","Journal","DOI"
 # ff ratios
+"2006","Jlab","Plaster-06","2006-PRC-73-025205","10.1103/PhysRevC.73.025205"
+"2010","Jlab","Riordan-10","2010-PRL-105-262302","10.1103/PhysRevLett.105.262302"
 "1998","Bates","Milbrath-98","1998-PRL-80-N3-452","10.1103/PhysRevLett.80.452"
 "2001","Mainz","Dieterich-01","2001-PLB-500-47","10.1016/S0370-2693(01)00052-1"
 "2001","Mainz","Pospischil-01","2001-EPJA-12-125","10.1007/s100500170046"
