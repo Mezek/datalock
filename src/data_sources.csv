@@ -30,7 +30,13 @@
 "2020","SANE","Liyanage-20","2020-PR-C101-035206","10.1103/PhysRevC.101.035206"
 # proton
 "1973","SLAC","Kirk-73","1973-PRD-8-63_Kirk","10.1103/PhysRevD.8.63"
+"1986","SLAC","Arnold-86","1986-PRL-57-174_Arnold","10.1103/PhysRevLett.57.174"
+"1989","SLAC","Walker-89","1989-PLB-224-353_Walker","10.1016/0370-2693(89)91245-8"
+"1992","SLAC","Rock-92","1992-PRD-46-24_Rock","10.1103/PhysRevD.46.24"
 "1993","SLAC","Sill-93","1993-PRD-48-N1-29_Sill","10.1103/PhysRevD.48.29"
+"1994","SLAC","Walker-94","1994-PRD-49-N11-5671_Walker","10.1103/PhysRevD.49.5671"
+"1994","SLAC","Andivahis-94","1994-PRD-50-N9-5491_Andivahis","10.1103/PhysRevD.50.5491"
+"2004","Jlab","Christy-04","2004-PRC-70-015206_Christy","10.1103/PhysRevC.70.015206"
 "2021","GMp12","Christy-21","arXiv:2103.01842",""
 # pion phase shift
 "1973","","Protopopescu","1973-PR-D7-1279","doi.org/10.1103/PhysRevD.7.1279"
