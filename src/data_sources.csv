@@ -4,6 +4,18 @@
 "2010","Jlab","Riordan-10","2010-PRL-105-262302","10.1103/PhysRevLett.105.262302"
 "2013","MAMI","Schlimme-13","2013-PRL-111-132504","10.1103/PhysRevLett.111.132504"
 # neutron
+"1973","CEA","Hanson-73","1973-PRD-8-753_Hanson","10.1103/PhysRevD.8.753"
+"1994","CEBAF","Eden-94","1994-PRC-50-N4-1749_Eden","10.1103/PhysRevC.50.R1749"
+"1998","FENICE","Antonelli-98","1998-NPB-517-3_Antonelli","10.1016/S0550-3213(98)00083-2"
+"1999","MAMI","Becker-99","1999-EPJA-6-329_Becker","10.1007/s100500050351"
+"1999","MAMI","Herberg-99","1999-EPJA-5-131_Herberg","10.1007/s100500050268"
+"1999","MAMI","Ostrick-99","1999-PRL-83-N2-276_Ostrick","10.1103/PhysRevLett.83.276"
+"1999","NIKHEF","Passchier-99","1999-PRL-82-N25-4988_Passchier","10.1103/PhysRevLett.82.4988"
+"2001","Jlab","Golak-01","2001-PRC-63-034006_Golak","10.1103/PhysRevC.63.034006"
+"2001","Jlab","Zhu-01","2001-PRL-87-N8-081801_Zhu","10.1103/PhysRevLett.87.081801"
+"2003","MAMI","Bermuth-03","2003-PLB-564-199_Bermuth","10.1016/S0370-2693(03)00725-1"
+"2004","Jlab","Warren-04","2004-PRL-92-N4-042301-1_Warren","10.1103/PhysRevLett.92.042301"
+"2005","MAMI","Glazier-05","2005-EPJA-24-101_Glazier","10.1140/epja/i2004-10115-8"
 "2017","Jlab","Sulkosky-17","2017-PRC-96-065206","10.1103/PhysRevC.96.0652006"
 # proton ratios
 "1998","Bates","Milbrath-98","1998-PRL-80-N3-452","10.1103/PhysRevLett.80.452"
