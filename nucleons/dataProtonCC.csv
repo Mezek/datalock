@@ -1,0 +1,5 @@
+# Cross section sigma_p pbar, e+e- -> p pbar
+# sqrt(s) [GeV/c] | delta+ | delta- | sigma_exp [ps] | delta sigma_exp+ | delta sigma_exp-
+Code,Abbrev,x,dx+,dx-,y,dy+,dy-
+20,Ablikim-20,2.0000,0.0000,0.0000,841.3000,27.3366,27.3366
+# EOF
