@@ -50,7 +50,7 @@ out_filename  = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0,
                  names=['E1', 'E2', 'sqrtS', 'S', 'bareCS', 'deltaCS', 'AR', 'ARL', 'ARH'])
@@ -76,25 +76,27 @@ df['deltaFFn'] = (np.sqrt(np.power(df['d1vf'], 2) * np.power(df['deltaCS'], 2)
                   + np.power(df['d2vf'], 2) * np.power(df['deltaAR'], 2)))
 df['percompCS'] = np.fabs(df['bareCS'] - df['dressedCS'])/df['bareCS']*100
 
-print df[['sqrtS', 'S', 'bareCS', 'FF', 'deltaFF', 'deltaFFn', 'percompCS']]
+print(df[['sqrtS', 'S', 'bareCS', 'FF', 'deltaFF', 'deltaFFn', 'percompCS']])
 df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('BaBar')
+fig.canvas.manager.set_window_title('BaBar')
 
 ax1 = plt.subplot(111)
 ax1.set_title('BaBar')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\sigma$  [nb]')
-ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6)
+ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6,
+             label="bareCS")
 ax1.set_yscale('log')
 ax2 = plt.subplot(111)
-ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6, color='r')
+ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6,
+             color='r', label="dressedCS")
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
-#yfmt = ScalarFormatter(useOffset=False)
-#yfmt.set_powerlimits((-4,4))
-#ax1.yaxis.set_major_formatter(yfmt)
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# yfmt = ScalarFormatter(useOffset=False)
+# yfmt.set_powerlimits((-4,4))
+# ax1.yaxis.set_major_formatter(yfmt)
 ax1.yaxis.grid()
 plt.legend(loc=1, prop={'size': 12})
 fig.tight_layout()
@@ -102,13 +104,14 @@ save_file = os.path.join(dev_name, 'plot_BaBar_CS.png')
 fig.savefig(save_file, dpi=150)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('BaBar')
+fig.canvas.manager.set_window_title('BaBar')
 
 ax1 = plt.subplot(111)
 ax1.set_title('Plot title')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$|F(s)|^2$')
-ax1.errorbar(dataX, df['FF'], yerr=df['deltaFF'], marker='o', linestyle='', markersize=6)
+ax1.errorbar(dataX, df['FF'], yerr=df['deltaFF'], marker='o', linestyle='', markersize=6,
+             label="FF")
 ax1.set_yscale('log')
 ax1.yaxis.grid()
 
@@ -132,7 +135,7 @@ ax4 = plt.subplot(111)
 ax4.set_title('Alpha')
 ax4.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax4.set_ylabel('$\\alpha(s)$')
-#ax4.plot(dataX, alphas(df['beta'])/alf, marker='o', linestyle='', markersize=3)
+# ax4.plot(dataX, alphas(df['beta'])/alf, marker='o', linestyle='', markersize=3)
 ax4.plot(dataX, df['AR'], marker='o', linestyle='', markersize=3)
 fig.tight_layout()
 save_file = os.path.join(dev_name, 'plot_alpha.png')

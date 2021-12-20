@@ -27,14 +27,14 @@ if not os.path.exists(dev_name):
 
 filename = 'dataCMD-2'
 filename_suffix = 'csv.gz'
-out_filename  = os.path.join(dev_name, 'outFile.csv')
+out_filename = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0, names=['sqrtS','CS','deltaCS','pionFF','deltaPionFF'])
-#df.reset_index()
+# df.reset_index()
 df['S'] = np.power(df['sqrtS']/1000., 2.)
 dataX = df['sqrtS']/1000.
 dataY = df['CS']
@@ -45,21 +45,21 @@ df['check'] = 1. / (3. * df['S'] /
             np.pi / alf / alf / np.power(df['beta'], 3.) * nanoToMili / htc2) * df['pionFF']
 df['deltaCheck'] = 1. / (3. * df['S'] /
             np.pi / alf / alf / np.power(df['beta'], 3.) * nanoToMili / htc2) * df['deltaPionFF']
-print df[['sqrtS','S','CS','check','deltaCheck']]
+print(df[['sqrtS','S','CS','check','deltaCheck']])
 # df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('Figure name')
+fig.canvas.manager.set_window_title('Figure name')
 
 ax1 = plt.subplot(111)
-ax1.set_title('Plot title')
+ax1.set_title('CMD-2')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\sigma$  [nb]')
 ax1.errorbar(dataX, dataY, yerr=dataEY, marker='o', linestyle='', markersize=6)
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
 yfmt = ScalarFormatter(useOffset=False)
-yfmt.set_powerlimits((-4,4))
+yfmt.set_powerlimits((-4, 4))
 ax1.yaxis.set_major_formatter(yfmt)
 ax1.yaxis.grid()
 

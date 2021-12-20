@@ -23,6 +23,7 @@ def beta(x):
 def alphas(x):
     return alf/(1. - alf/3./np.pi*np.log(x/massPi/massPi))
 
+
 # Filenames
 dir_name = './data'
 dev_name = './dev'
@@ -31,22 +32,22 @@ if not os.path.exists(dev_name):
 
 filename = 'dataAlphaQED'
 filename_suffix = 'csv.gz'
-out_filename  = os.path.join(dev_name, 'outFile.csv')
+out_filename = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0, names=['sqrtS', 'A', 'AL', 'AH'])
-#df.reset_index()
+# df.reset_index()
 dataX = df['sqrtS']
 df['S'] = df['sqrtS']*df['sqrtS']
 df['beta'] = beta(df['S'])
-print df[['sqrtS','S']]
+print(df[['sqrtS','S']])
 # df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('Figure name')
+fig.canvas.manager.set_window_title('Figure name')
 
 dataCX = []
 dataCY = []
@@ -60,17 +61,17 @@ ax1.set_title('Plot title')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\alpha$')
 ax1.plot(dataCX, dataCY, marker='o', linestyle='', markersize=3)
-#ax1.set_yscale('log')
+# ax1.set_yscale('log')
 
 ax2 = plt.subplot(111)
-#ax2.plot(df['sqrtS'], alf/(1. - df['A']), marker='.', linestyle='', markersize=3, color='red')
+# ax2.plot(df['sqrtS'], alf/(1. - df['A']), marker='.', linestyle='', markersize=3, color='red')
 ax2.plot(df['sqrtS'], df['A'], marker='.', linestyle='', markersize=3, color='red')
-#ax2.set_yscale('log')
+# ax2.set_yscale('log')
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
-#yfmt = ScalarFormatter(useOffset=False)
-#yfmt.set_powerlimits((-4,4))
-#ax1.yaxis.set_major_formatter(yfmt)
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# yfmt = ScalarFormatter(useOffset=False)
+# yfmt.set_powerlimits((-4,4))
+# ax1.yaxis.set_major_formatter(yfmt)
 ax1.yaxis.grid()
 
 fig.tight_layout()

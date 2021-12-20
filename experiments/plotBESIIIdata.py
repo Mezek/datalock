@@ -50,7 +50,7 @@ out_filename = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0,
                  names=['sqrtS', 'bareCS', 'deltaCS', 'pionFF', 'deltaPionFF', 'AR', 'ARL', 'ARH'])
@@ -91,20 +91,22 @@ df['deltaBareFF'] = df['ufactor'] * df['deltaCS']
 df['compFF'] = df['FF'] - df['pionFF']
 df['percompFF'] = np.fabs(df['compFF'])/df['pionFF']*100
 df['percompCS'] = np.fabs(df['bareCS'] - df['dressedCS'])/df['bareCS']*100
-print df[['S', 'bareCS', 'FF', 'pionFF', 'deltaFF', 'deltaFFn', 'compFF', 'percompFF', 'percompCS']]
+print(df[['S', 'bareCS', 'FF', 'pionFF', 'deltaFF', 'deltaFFn', 'compFF', 'percompFF', 'percompCS']])
 
 df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('BESIII')
+fig.canvas.manager.set_window_title('BESIII')
 
 ax1 = plt.subplot(111)
 ax1.set_title('BESIII')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\sigma$  [nb]')
-ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6)
+ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6,
+             label='bareCS')
 ax2 = plt.subplot(111)
-ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6, color='r')
+ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6,
+             color='r', label='dressedCS')
 
 # ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
 yfmt = ScalarFormatter(useOffset=False)
@@ -118,14 +120,16 @@ fig.savefig(save_file, dpi=150)
 
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('BESIII')
+fig.canvas.manager.set_window_title('BESIII')
 
 ax1 = plt.subplot(111)
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$|F(s)|^2$')
-ax1.errorbar(dataX, df['bareFF'], yerr=df['deltaBareFF'], marker='o', linestyle='', markersize=6)
+ax1.errorbar(dataX, df['bareFF'], yerr=df['deltaBareFF'], marker='o', linestyle='', markersize=6,
+             label="bareFF")
 ax2 = plt.subplot(111)
-ax2.errorbar(dataX, df['FF'], yerr=df['deltaFF'], marker='.', linestyle='', markersize=6, color='r')
+ax2.errorbar(dataX, df['FF'], yerr=df['deltaFF'], marker='.', linestyle='', markersize=6, color='r',
+             label="dressedFF")
 
 plt.legend()
 fig.tight_layout()

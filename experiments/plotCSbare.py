@@ -31,7 +31,7 @@ out_filename  = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0, names=['S','CS','deltaCS'])
 #df.reset_index()
@@ -45,7 +45,7 @@ dataEY1 = df.loc[0:336, 'deltaCS']
 dataX2 = np.sqrt(df.loc[337:411, 'S'])
 dataY2 = df.loc[337:411, 'CS']
 dataEY2 = df.loc[337:411, 'deltaCS']
-print df.loc[337:411, ['S', 'CS', 'deltaCS']]
+print(df.loc[337:411, ['S', 'CS', 'deltaCS']])
 
 """
 df['beta'] = beta(df['S'])
@@ -60,16 +60,16 @@ print df[['S','CS','FF','deltaFF','beta','FSR']]
 """
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('Figure name')
+fig.canvas.manager.set_window_title('Figure name')
 
 ax1 = plt.subplot(111)
-ax1.set_title('Plot title')
+ax1.set_title('BaBar + KLOE')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\sigma^{bare}_{\\pi\\pi}$  [nb]')
 ax1.errorbar(dataX1, dataY1, yerr=dataEY1, marker='o', linestyle='', markersize=2, color='red', capsize=2, label='BaBar09')
 ax1.set_xlim([0.3, 1.2])
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
 yfmt = ScalarFormatter(useOffset=False)
 yfmt.set_powerlimits((-4,4))
 ax1.yaxis.set_major_formatter(yfmt)

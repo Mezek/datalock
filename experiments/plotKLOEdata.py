@@ -49,7 +49,7 @@ out_filename  = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0,
                  names=['S', 'bareCS', 'deltaCS', 'pionFF', 'deltaPionFF', 'AR', 'ARL', 'ARH'])
@@ -84,22 +84,24 @@ df['deltaFFn'] = (np.sqrt(np.power(df['d1vf'], 2) * np.power(df['deltaCS'], 2)
                           + np.power(df['d2vf'], 2) * np.power(df['deltaAR'], 2)))
 
 df['compFF'] = df['FF'] - df['pionFF']
-print df[['S', 'bareCS', 'FF', 'deltaFF', 'compFF']]
+print(df[['S', 'bareCS', 'FF', 'deltaFF', 'compFF']])
 
 df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('KLOE')
+fig.canvas.manager.set_window_title('KLOE')
 
 ax1 = plt.subplot(111)
 ax1.set_title('KLOE')
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')
 ax1.set_ylabel('$\\sigma$  [nb]')
-ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6)
+ax1.errorbar(dataX, df['bareCS'], yerr=df['deltaCS'], marker='o', linestyle='', markersize=6,
+             label='bareCS')
 ax2 = plt.subplot(111)
-ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6, color='r')
+ax2.errorbar(dataX, df['dressedCS'], yerr=df['deltaDressedCS'], marker='.', linestyle='', markersize=6, color='r',
+             label='dressedCS')
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
 yfmt = ScalarFormatter(useOffset=False)
 yfmt.set_powerlimits((-4, 4))
 ax1.yaxis.set_major_formatter(yfmt)
@@ -110,7 +112,7 @@ save_file = os.path.join(dev_name, 'plot_KLOE_CS.png')
 fig.savefig(save_file, dpi=150)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('KLOE')
+fig.canvas.manager.set_window_title('KLOE')
 
 ax1 = plt.subplot(111)
 ax1.set_xlabel('$\\sqrt{s}$  [GeV]')

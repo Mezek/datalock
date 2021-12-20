@@ -27,6 +27,7 @@ def alphas(x):
 def delta_alphas(x):
     return alf/3./np.pi*np.log(x/massPi/massPi)
 
+
 # Filenames
 dir_name = './data'
 dev_name = './dev'
@@ -39,18 +40,18 @@ out_filename  = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
-print data_file
+print(data_file)
 
 df = pd.read_csv(data_file, sep=',', header=0, names=['sqrtS', 'deltaA', 'deltaAL', 'deltaAH'])
-#df.reset_index()
+# df.reset_index()
 dataX = df['sqrtS']
 df['S'] = df['sqrtS']*df['sqrtS']
 df['beta'] = beta(df['S'])
-print df[['sqrtS','S']]
+print(df[['sqrtS','S']])
 # df.to_csv(out_filename)
 
 fig = plt.figure(figsize=(10, 7))
-fig.canvas.set_window_title('Figure name')
+fig.canvas.manager.set_window_title('Figure name')
 
 dataCX = []
 dataCY = []
@@ -67,14 +68,14 @@ ax1.plot(dataCX, dataCY, marker='o', linestyle='', markersize=3)
 ax1.set_yscale('log')
 
 ax2 = plt.subplot(111)
-#ax2.plot(df['sqrtS'], alf/(1. - df['A']), marker='.', linestyle='', markersize=3, color='red')
+# ax2.plot(df['sqrtS'], alf/(1. - df['A']), marker='.', linestyle='', markersize=3, color='red')
 ax2.plot(df['sqrtS'], df['deltaA'], marker='.', linestyle='', markersize=3, color='red')
 ax2.set_yscale('log')
 
-#ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
-#yfmt = ScalarFormatter(useOffset=False)
-#yfmt.set_powerlimits((-4,4))
-#ax1.yaxis.set_major_formatter(yfmt)
+# ax1.yaxis.set_major_formatter(FormatStrFormatter('%.1e'))
+# yfmt = ScalarFormatter(useOffset=False)
+# yfmt.set_powerlimits((-4,4))
+# ax1.yaxis.set_major_formatter(yfmt)
 ax1.yaxis.grid()
 
 fig.tight_layout()
