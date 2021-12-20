@@ -339,7 +339,7 @@ Code,Abbrev,x,y,dy+,dy-
 101,Aubert-09,7.5625,0.0051,0.0052,0.0052
 101,Aubert-09,8.1225,0.0036,0.0052,0.0052
 101,Aubert-09,8.7025,0.0042,0.0051,0.0051
-# s [GeV^2], sigma_dressed, err. sigma_dressed, err. sigma_dressed
+# s [GeV^2], sigma_dressed [nb], err. sigma_dressed, err. sigma_dressed
 103,Aubert-09,0.0930,25.2215,2.6709,2.6709
 103,Aubert-09,0.0992,35.2394,2.8949,2.8949
 103,Aubert-09,0.1056,45.2899,3.0336,3.0336

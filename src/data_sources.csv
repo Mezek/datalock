@@ -70,7 +70,10 @@
 # pion ff
 "2002","CMD-2","Akhmetshin-02","2002-PL-B527-161","10.1016/S0370-2693(02)01168-1"
 "2008","Belle","Fujikawa-08","2008-PRD-78-072006","10.1103/PhysRevD.78.072006"
+"2009","KLOE","Ambrosino-09","2009-PL-B670-285","10.1016/j.physletb.2008.10.060"
 "2009","BABAR","Aubert-09","2009-PRL-103-231801","10.1103/PhysRevLett.103.231801"
+"2011","KLOE","Ambrosino-11","2011-PL-B700-102","10.1016/j.physletb.2011.04.055"
+"2013","KLOE","Babusci-13","2013-PL-B720-336_Babusci","10.1016/j.physletb.2013.02.029"
 "2016","BESIII","Ablikim-16","2016-PL-B753-629","10.1016/j.physletb.2015.11.043"
 # qe cc neutrinos
 "1977","ANL","Barish-77","1977-PR-D16-3103","10.1103/PhysRevD.16.3103"

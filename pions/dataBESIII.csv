@@ -62,7 +62,7 @@ Code,Abbrev,x,y,dy+,dy-
 101,Ablikim-16,0.7877,9.9000,0.5000,0.5000
 101,Ablikim-16,0.7966,8.7000,0.4000,0.4000
 101,Ablikim-16,0.8055,7.9000,0.4000,0.4000
-# s [GeV^2], sigma_dressed, err. sigma_dressed, err. sigma_dressed
+# s [GeV^2], sigma_dressed [nb], err. sigma_dressed, err. sigma_dressed
 103,Ablikim-16,0.3630,288.3364,15.2020,15.2020
 103,Ablikim-16,0.3691,306.5512,15.4977,15.4977
 103,Ablikim-16,0.3752,332.6452,16.2926,16.2926
