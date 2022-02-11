@@ -38,6 +38,7 @@ def etaFSR(x):
 def alphas(x):
     return alf/(1. - alf/3./np.pi*np.log(x/massPi/massPi))
 
+
 # Filenames
 dir_name = './data'
 dev_name = './dev'
@@ -45,7 +46,7 @@ if not os.path.exists(dev_name):
     os.makedirs(dev_name)
 
 filename = 'dataBESIII'
-filename_suffix = 'csv.gz'
+filename_suffix = 'csv.'
 out_filename = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe

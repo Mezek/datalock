@@ -26,7 +26,7 @@ if not os.path.exists(dev_name):
     os.makedirs(dev_name)
 
 filename = 'dataSND'
-filename_suffix = 'csv.gz'
+filename_suffix = 'csv'
 out_filename  = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe

@@ -34,8 +34,10 @@ def etaFSR(x):
              )
     return delta
 
+
 def alphas(x):
     return alf/(1. - alf/3./np.pi*np.log(x/massPi/massPi))
+
 
 # Filenames
 dir_name = './data'
@@ -44,8 +46,8 @@ if not os.path.exists(dev_name):
     os.makedirs(dev_name)
 
 filename = 'dataKLOE'
-filename_suffix = 'csv.gz'
-out_filename  = os.path.join(dev_name, 'outFile.csv')
+filename_suffix = 'csv'
+out_filename = os.path.join(dev_name, 'outFile.csv')
 
 # Read data to dataframe
 data_file = os.path.join(dir_name, filename + '.' + filename_suffix)
