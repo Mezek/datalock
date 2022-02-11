@@ -1,4 +1,4 @@
-E1 [GeV],E2 [GeV],E1+(E2-E1)/2,[GeV^2],sigma [nb],err. sigma [nb],alphaRatio,alphaRatioL,alphaRatioH
+E1 [GeV],E2 [GeV],E1+(E2-E1)/2,s [GeV^2],sigma [nb],err. sigma [nb] bare,alphaRatio,alphaRatioL,alphaRatioH
 0.3000,0.3100,0.3050,0.0930,25.49044,2.69943,1.00713,1.00712,1.00714
 0.3100,0.3200,0.3150,0.0992,35.48012,2.91464,1.00719,1.00718,1.00720
 0.3200,0.3300,0.3250,0.1056,45.48580,3.04669,1.00725,1.00724,1.00726
