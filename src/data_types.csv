@@ -17,6 +17,8 @@
 "40","neutron","sigma","with theta and energy"
 "41","neutron","sigma",""
 "45","neutron","G_EFF",""
+"50","kaon","F_K","electron-positron annihilation"
+"51","kaon","sigma","electron-positron annihilation"
 "101","pion","F_pi","e+e- -> pi+pi-"
 "102","tau","F_pi","tau decay"
 "103","pion","sigma_dressed","e+e- -> pi+pi-"
