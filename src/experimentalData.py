@@ -28,10 +28,7 @@ Data for elementary particles.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import importlib
 
-# from collections.abc import Iterable
-from datetime import datetime
 from typing import Any, Callable, List, Optional, Tuple, AnyStr
 
 
@@ -198,7 +195,7 @@ class ExperimentalData:
 
     def show_data_xy_err(self):
         fig = plt.figure(figsize=(7, 5), )
-        fig.canvas.set_window_title("Experimental data with xy errors")
+        fig.canvas.manager.set_window_title("Experimental data with xy errors")
         ax = plt.subplot(111)
         ax.set_title("All data")
         ax.set_xlabel('x')
