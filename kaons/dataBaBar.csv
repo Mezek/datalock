@@ -1,0 +1,9 @@
+# Data e+e- -> K+K-(gamma)
+# Source: BABAR, 2013-PR-D88-032013_Lees
+# TODO: finish to add data
+#### s [GeV^2], |F_K|^2, err. |F_K|^2, err. |F_K|^2
+Code,Abbrev,x,y,dy+,dy-
+50,Lees-13-K,4.0000,0.1021,0.0035,0.0035
+#### s [GeV^2],,sigma [nb], err. sigma, err. sigma
+51,Lees-13-K,4.0000,351.5000,12.1754,12.1754
+# EOF
