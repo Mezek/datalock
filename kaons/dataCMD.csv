@@ -1,0 +1,8 @@
+# Data e+e- -> K+K-
+# Source: CMD-3, 2018-PL-B779-64_Kozyrev
+# s [GeV^2], |F_K|^2, err. |F_K|^2, err. |F_K|^2
+Code,Abbrev,x,y,dy+,dy-
+50,Kozyrev-18,1.0000,1.0000,1.0000,1.0000
+# s [GeV^2],,sigma [pb], err. sigma, err. sigma
+51,Kozyrev-18,1.0000,1.0000,1.0000,1.0000
+# EOF
