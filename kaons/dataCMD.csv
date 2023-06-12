@@ -1,6 +1,6 @@
 # Data e+e- -> K+K-
 # Source: CMD-3, 2018-PL-B779-64_Kozyrev
-# s [GeV^2],,sigma [nb], err. sigma, err. sigma
+# s [GeV^2], sigma [nb], err. sigma, err. sigma
 Code,Abbrev,x,y,dy+,dy-
 51,Kozyrev-18,1.0210,69.8700,1.4842,1.4842
 51,Kozyrev-18,1.0261,152.4500,3.2119,3.2119
