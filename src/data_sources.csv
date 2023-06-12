@@ -91,5 +91,10 @@
 "2002","LSND","Auerbach-02","","10.1103/PhysRevC.66.015501"
 "2015","T2K","Abe-15","","10.1103/PhysRevD.92.112003"
 # kaon ff
+"1995","CMD-2","Akhmetshin-95","1995-PL-B364-199_Akhmetshin","10.1016/0370-2693(95)01394-6"
+"2001","SND","Achasov-01","2001-PR-D63-072002_Achasov","10.1103/PhysRevD.63.072002"
+"2008","CMD-2","Akhmetshin-08","2008-PL-B669-3-217_Akhmetshin","10.1016/j.physletb.2008.09.053"
 "2013","BABAR","Lees-13-K","2013-PR-D88-032013_Lees","10.1103/PhysRevD.88.032013"
+"2015","BABAR","Lees-15-K","2015-PR-D92-072008_Lees","10.1103/PhysRevD.92.072008"
+"2018","CMD-3","Kozyrev-18","2018-PL-B779-64_Kozyrev","10.1016/j.physletb.2018.01.079"
 "2019","BESIII","Ablikim-19-2","2019-PR-D99-032001_Ablikim","10.1103/PhysRevD.99.032001"
