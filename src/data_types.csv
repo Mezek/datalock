@@ -19,6 +19,8 @@
 "45","neutron","G_EFF",""
 "50","kaon","F_K K+ K-","electron-positron annihilation"
 "51","kaon","F_K K_S K_L","electron-positron annihilation"
+"52","kaon","F_K charged space-like","kaon scattering on atomic electron"
+"53","kaon","F_K neutral space-like","kaon scattering on atomic electron"
 "60","kaon","sigma K+ K-","electron-positron annihilation"
 "61","kaon","sigma K_S K_L","electron-positron annihilation"
 "101","pion","F_pi","e+e- -> pi+pi-"
