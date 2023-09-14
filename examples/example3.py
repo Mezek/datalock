@@ -32,15 +32,16 @@ def main():
     # Convert data
     tx = exd.data_x
     ty = exd.data_y
-    terr = exd.data_dy_plus
+    tdy = exd.data_dy_plus
     ALPHA = 0.007297352569816315
     HBARC2 = 0.38937937217186
     M_K0 = 0.001 * 497.611
     BETA = np.sqrt(1 - 4*M_K0**2/tx)
-    cef = np.pi*ALPHA**2*BETA**3
-    tz = np.sqrt(ty/HBARC2/1e6*3*tx/cef)
-    terr = np.zeros(len(tx))
-    # TODO: calculate errors
+    cef = np.pi*ALPHA**2*BETA**3*HBARC2*1e6/(3*tx)
+    tz = np.sqrt(ty/cef)
+    # terr = 0.5*np.sqrt(1/(ty*cef))*tdy
+    terr = 0.5 / cef / tz * tdy
+
     for i, e in enumerate(tx):
         print(f"{i}, {e}, {ty[i]}, {tz[i]:.3f} +/- {terr[i]:.3f} ")
 
