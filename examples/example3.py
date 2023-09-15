@@ -23,8 +23,7 @@ os.environ['XDG_SESSION_TYPE'] = 'x11'
 def main():
     data_file = "dataKaonsNeutral.csv"
     exd = ExperimentalData()
-    exd.read_data(data_file, dtypes=[61], sets=["Kozyrev-16",  # CMD-3,
-                                                #"Achasov-06",  # SND
+    exd.read_data(data_file, dtypes=[61], sets=["Ablikim-21",
                                                  ],
                   xmin=.0, xmax=10.)
     # exd.show_data()
@@ -43,7 +42,9 @@ def main():
     terr = 0.5 / cef / tz * tdy
 
     for i, e in enumerate(tx):
-        print(f"{i}, {e}, {ty[i]}, {tz[i]:.3f} +/- {terr[i]:.3f} ")
+        # print(f"{i}, {e}, {ty[i]}, {tz[i]:.3f} +/- {terr[i]:.3f} ")
+        # to_csv_file
+        print(f"51,{e:.4f},{tz[i]:.4f},{terr[i]:.4f},{terr[i]:.4f}")
 
     """
     # Plot data
