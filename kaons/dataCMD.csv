@@ -17,6 +17,7 @@ Code,Abbrev,x,y,dy+,dy-
 60,Akhmetshin-95,1.0440,973.0000,126.0000,126.0000
 60,Akhmetshin-95,1.0446,719.0000,104.0000,104.0000
 60,Akhmetshin-95,1.0568,161.0000,25.0000,25.0000
+# Data e+e- -> K+K-
 # Source: CMD-2, 2008-PL-B669-3-217_Akhmetshin
 # s [GeV^2], sigma [nb], err. sigma, err. sigma
 60,Akhmetshin-08,1.0233,83.5700,5.8900,5.8900
@@ -40,6 +41,7 @@ Code,Abbrev,x,y,dy+,dy-
 60,Akhmetshin-08,1.0440,933.6900,14.4300,14.4300
 60,Akhmetshin-08,1.0459,606.5500,16.9900,16.9900
 60,Akhmetshin-08,1.0580,158.1000,12.1600,12.1600
+# Data e+e- -> K+K-
 # Source: CMD-3, 2018-PL-B779-64_Kozyrev
 # s [GeV^2], sigma [nb], err. sigma, err. sigma
 60,Kozyrev-18,1.0210,69.8700,1.4842,1.4842

@@ -23,7 +23,12 @@ os.environ['XDG_SESSION_TYPE'] = 'x11'
 def main():
     data_file = "dataKaonsNeutral.csv"
     exd = ExperimentalData()
-    exd.read_data(data_file, dtypes=[61], sets=["Ablikim-21",
+    exd.read_data(data_file, dtypes=[61], sets=["Achasov-01",
+                                                "Akhmetshin-03",
+                                                "Akhmetshin-04",
+                                                "Kozyrev-16",
+                                                "Lees-14-K",
+                                                "Ablikim-21",
                                                  ],
                   xmin=.0, xmax=10.)
     # exd.show_data()
