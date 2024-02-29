@@ -23,6 +23,8 @@
 "53","kaon","F_K neutral space-like","kaon scattering on atomic electron"
 "60","kaon","sigma K+ K-","electron-positron annihilation"
 "61","kaon","sigma K0_S K0_L","electron-positron annihilation"
+"62","kaon","sigma bare K+ K-","electron-positron annihilation"
+"63","kaon","sigma bare K0_S K0_L","electron-positron annihilation"
 "101","pion","F_pi","e+e- -> pi+pi-"
 "102","tau","F_pi","tau decay"
 "103","pion","sigma_dressed","e+e- -> pi+pi-"
