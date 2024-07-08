@@ -32,6 +32,7 @@
 "101","pion","F_pi","e+e- -> pi+pi-"
 "102","tau","F_pi","tau decay"
 "103","pion","sigma_dressed","e+e- -> pi+pi-"
+"105","pion","F_pi^c","e+e- -> pi+pi-"
 "110","pion","phase shift S",""
 "120","pion","phase shift P",""
 "130","pion","phase shift D",""
