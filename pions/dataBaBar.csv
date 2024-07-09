@@ -681,7 +681,7 @@ Code,Abbrev,x,y,dy+,dy-
 103,Aubert-09,8.7025,0.0105,0.0126,0.0126
 # Data e+e- -> pi+pi-
 # Source: BaBar, 2009-PRL-103-231801_Aubert
-# s [GeV^2], |F_pi^c|^2, err. |F_pi^c|^2, err. |F_pi^c|^2
+# s [GeV^2], |F_pi^c|, err. |F_pi^c|, err. |F_pi^c|
 105,Aubert-09,0.0930,1.2877,0.0682,0.0682
 105,Aubert-09,0.0992,1.2744,0.0523,0.0523
 105,Aubert-09,0.1056,1.2826,0.0429,0.0429

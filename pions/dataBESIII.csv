@@ -250,7 +250,7 @@ Code,Abbrev,x,y,dy+,dy-
 103,Ablikim-21,0.8055,182.0702,7.8668,7.8668
 # Data e+e- -> pi+pi-
 # Source: BESIII, 2016-PL-B753-629
-# s [GeV^2], |F_pi^c|^2, err. |F_pi^c|^2, err. |F_pi^c|^2
+# s [GeV^2], |F_pi^c|, err. |F_pi^c|, err. |F_pi^c|
 105,Ablikim-21,0.3630,2.6227,0.0571,0.0571
 105,Ablikim-21,0.3691,2.7158,0.0551,0.0551
 105,Ablikim-21,0.3752,2.8586,0.0524,0.0524
