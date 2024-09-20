@@ -1,5 +1,5 @@
 # Cross-section sigma_p pbar, e+e- -> p pbar
-# sqrt(s) [GeV/c] | delta+ | delta- | sigma_exp [pb] | delta sigma_exp+ | delta sigma_exp-
+# s [GeV^2/c] | delta+ | delta- | sigma_exp [pb] | delta sigma_exp+ | delta sigma_exp-
 Code,Abbrev,x,dx+,dx-,y,dy+,dy-
 31,Lees-13,3.5664,0.0434,0.0434,806.0000,54.9181,54.9181
 31,Lees-13,3.6577,0.0478,0.0478,906.0000,59.3633,59.3633
