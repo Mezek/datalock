@@ -31,9 +31,12 @@
 "2009","CLAS","Lachniet-09","2009-PRL-102-192001_Lachniet","10.1103/PhysRevLett.102.192001"
 "2014","SND","Achasov-14","2014-PR-D90-112007_Achasov","10.1103/PhysRevD.90.112007"
 "2017","JLab","Sulkosky-17","2017-PRC-96-065206","10.1103/PhysRevC.96.0652006"
+# neutron cross section and effective form factor
 "2019","SND","Druzhinin-19","2019-EPJWC-212-07007_Druzhinin","10.1051/epjconf/201921207007"
 "2021","BESIII","Ablikim-21","2021-NP-17-11-1200_Ablikim","10.1038/s41567-021-01345-6"
-# proton ratios end effective form factor
+"2023","SND","Achasov-23","2023-PAN-86-1165_Achasov","10.1134/S1063778823060054"
+"2023","SND","Achasov-23-2","2023-PPN-54-624_Achasov","10.1134/S1063779623040020"
+# proton ratios and effective form factor
 "1998","Bates","Milbrath-98","1998-PRL-80-N3-452","10.1103/PhysRevLett.80.452"
 "2000","JLab","Jones-00","2000-PRL-84-N7-1398_Jones","10.1103/PhysRevLett.84.1398"
 "2001","Mainz","Dieterich-01","2001-PLB-500-47","10.1016/S0370-2693(01)00052-1"
