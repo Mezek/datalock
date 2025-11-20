@@ -9,7 +9,7 @@ __email__ = "erik.bartos@gmail.com"
 
 import os
 import matplotlib.pyplot as plt
-from src.experimentalData import ExperimentalData
+from src.datalock.experimentalData import ExperimentalData
 
 # wayland setting
 os.environ['XDG_SESSION_TYPE'] = 'x11'
