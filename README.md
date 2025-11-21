@@ -1,6 +1,6 @@
 # DataLock
 
-World physical experimental data for selected elementary particles. Data are supplemented with reference links.
+World experimental data for selected physical processes. Data are supplemented with reference links.
 
 # Bugs and remarks
 
