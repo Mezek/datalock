@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import matplotlib.container as mcn
 import numpy as np
 
-from src.experimentalData import ExperimentalData
+from datalock.experimentalData import ExperimentalData
 
 
 # wayland setting
