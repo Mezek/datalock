@@ -12,7 +12,7 @@ import matplotlib.markers as mrk
 import matplotlib.pyplot as plt
 import matplotlib.container as mcn
 
-from src.experimentalData import ExperimentalData
+from datalock.experimentalData import ExperimentalData
 
 
 # wayland setting

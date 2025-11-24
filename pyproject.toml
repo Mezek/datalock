@@ -9,9 +9,7 @@ description = "World experimental data for selected physical processes."
 dependencies = ["numpy", "pandas", "PyQt5"]
 authors = [{name = "Erik Bartoš", email = "erik.bartos@gmail.com"}]
 keywords = ["data", "cvs"]
-licence = "MIT"
-license-files = ["LICENSE"]
-readme = ["README.md"]
+readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
     "Development Status :: 3 - Alpha",
