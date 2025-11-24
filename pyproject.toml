@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "datalock"
 version = "1.0.0"
-description = "World experimental data for selected physical processes."
-dependencies = ["numpy", "pandas", "PyQt5"]
 authors = [{name = "Erik Bartoš", email = "erik.bartos@gmail.com"}]
-keywords = ["data", "cvs"]
+description = "World experimental data for selected physical processes."
 readme = "README.md"
+keywords = ["data", "cvs"]
 requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "PyQt5"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
@@ -25,6 +25,8 @@ classifiers = [
     "Operating System :: Unix",
     "Operating System :: MacOS",
 ]
+# license = "MIT"
+license-files = [ "LICENSE" ]
 
 [project.urls]
 Repository = "https://github.com/Mezek/datalock"
