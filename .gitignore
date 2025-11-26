@@ -4,17 +4,13 @@
 # files & directories
 experiments/dev/
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-.cache
-
 # general things to ignore
 build/
 dist/
 *.egg-info/
 *.egg
+*$py.class
+.cache
 *.py[cod]
 __pycache__/
 *.so
